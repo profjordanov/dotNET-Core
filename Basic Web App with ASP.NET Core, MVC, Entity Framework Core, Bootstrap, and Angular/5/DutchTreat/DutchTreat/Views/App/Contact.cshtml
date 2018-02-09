@@ -1,0 +1,41 @@
+﻿@model ContactViewModel
+@{
+  ViewBag.Title = "Contact Us";
+}
+@section scripts {
+  <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<div class="col-md-6 col-md-offset-3">
+  <div class="well">
+    <form method="post">
+      <div asp-validation-summary="ModelOnly"></div>
+
+      <div class="form-group">
+        <label asp-for="Name">Your Name:</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Email">Email:</label>
+        <input type="email" asp-for="Email"  class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Subject">Subject:</label>
+        <input type="text" asp-for="Subject"  class="form-control" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Message">Message:</label>
+        <textarea rows="4" asp-for="Message" class="form-control"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Send Message</button>
+        <div class="text-success">@ViewBag.UserMessage</div>
+      </div>
+    </form>
+  </div>
+</div>
