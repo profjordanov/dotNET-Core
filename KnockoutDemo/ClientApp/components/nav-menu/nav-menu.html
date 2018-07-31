@@ -1,5 +1,5 @@
 <div class='main-nav'>
-        <div class='navbar navbar-inverse'>
+    <div class='navbar navbar-inverse'>
         <div class='navbar-header'>
             <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
                 <span class='sr-only'>Toggle navigation</span>
@@ -30,6 +30,16 @@
                 <li>
                     <a href='/about' data-bind='css: { active: route().page === "about" }'>
                         <span class='glyphicon glyphicon-tags'></span> About
+                    </a>
+                </li>
+                <li>
+                    <a href='/Home/TabSelector' data-external="true">
+                        <span class='glyphicon glyphicon-folder-open'></span> Tab page
+                    </a>
+                </li>
+                <li>
+                    <a href='/Home/KnockoutMvc' data-external="true">
+                        <span class='glyphicon glyphicon-blackboard'></span> Mvc page
                     </a>
                 </li>
             </ul>

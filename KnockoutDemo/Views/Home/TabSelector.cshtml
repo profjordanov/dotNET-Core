@@ -1,0 +1,56 @@
+﻿@{
+    ViewData[ "Title" ] = "Tab Based Page";
+}
+<div class='row'>
+    <div class='col-xs-9 col-xs-offset-1'>
+        <h1>@ViewData[ "Title" ]</h1>
+        <a asp-action="Index" asp-controller="Home">
+            retun to SPA pages
+        </a>
+        <div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home" aria-controls="home" role="tab"
+                       data-toggle="tab">
+                        home
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#count" aria-controls="count" role="tab"
+                       data-toggle="tab">
+                        counter example
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#fetch" aria-controls="fetch" role="tab"
+                       data-toggle="tab">
+                        fetch data
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#about" aria-controls="about" role="tab"
+                       data-toggle="tab">
+                        about
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <home-page></home-page>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="count">
+                    <counter-example></counter-example>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="fetch">
+                    <fetch-data></fetch-data>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="about">
+                    <about></about>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="~/dist/tab.js" asp-append-version="true"></script>
+}

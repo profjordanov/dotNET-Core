@@ -33,7 +33,7 @@ export class Router {
             let target: any = evt.currentTarget;
             if (target && target.tagName === 'A') {
                 let href = target.getAttribute('href');
-                if (href && href.indexOf(basename + '/') === 0) {
+                if (href && href.indexOf(basename + '/') === 0 && !$(target).attr('data-external')) {
                     const hrefAfterBasename = href.substring(basename.length);
                     history.push(hrefAfterBasename);
                     evt.preventDefault();

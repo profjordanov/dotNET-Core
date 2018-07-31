@@ -8,7 +8,9 @@ module.exports = (env) => {
     const isDevBuild = !(env && env.prod);
     return [{
         stats: { modules: false },
-        entry: { 'main': './ClientApp/boot.ts' },
+        entry: {
+            'main': './ClientApp/boot.ts'
+        },
         resolve: { extensions: [ '.js', '.ts' ] },
         output: {
             path: path.join(__dirname, bundleOutputDir),
