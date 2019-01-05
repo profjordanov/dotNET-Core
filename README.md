@@ -23,3 +23,6 @@ _1.Service Configuration
         //.AddDataAnnotations()
         //.AddCors()
         .AddJsonFormatters(); // JSON, or you can build your own custom one (above)
+        
+        
+_2. Install-Package BundlerMinifier.Core -Version 2.8.391        
