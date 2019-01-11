@@ -28,3 +28,5 @@ _1.Service Configuration
 _2. Install-Package BundlerMinifier.Core -Version 2.8.391      
 
 _3. http://www.codemaid.net/ - An open source Visual Studio extension to cleanup and simplify C# code.
+
+_4. https://ironsoftware.com/csharp/webscraper/ - The C# WebScraping Library
