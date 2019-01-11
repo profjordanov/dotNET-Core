@@ -25,4 +25,6 @@ _1.Service Configuration
         .AddJsonFormatters(); // JSON, or you can build your own custom one (above)
         
         
-_2. Install-Package BundlerMinifier.Core -Version 2.8.391        
+_2. Install-Package BundlerMinifier.Core -Version 2.8.391      
+
+_3. http://www.codemaid.net/ - An open source Visual Studio extension to cleanup and simplify C# code.
