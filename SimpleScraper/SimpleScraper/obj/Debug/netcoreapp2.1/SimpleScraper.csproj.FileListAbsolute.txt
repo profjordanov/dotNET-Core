@@ -1,0 +1,11 @@
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\bin\Debug\netcoreapp2.1\SimpleScraper.deps.json
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\bin\Debug\netcoreapp2.1\SimpleScraper.runtimeconfig.json
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\bin\Debug\netcoreapp2.1\SimpleScraper.runtimeconfig.dev.json
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\bin\Debug\netcoreapp2.1\SimpleScraper.dll
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\bin\Debug\netcoreapp2.1\SimpleScraper.pdb
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\obj\Debug\netcoreapp2.1\SimpleScraper.csprojAssemblyReference.cache
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\obj\Debug\netcoreapp2.1\SimpleScraper.csproj.CoreCompileInputs.cache
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\obj\Debug\netcoreapp2.1\SimpleScraper.AssemblyInfoInputs.cache
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\obj\Debug\netcoreapp2.1\SimpleScraper.AssemblyInfo.cs
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\obj\Debug\netcoreapp2.1\SimpleScraper.dll
+C:\Users\yoryordanov\source\repos\SimpleScraper\SimpleScraper\obj\Debug\netcoreapp2.1\SimpleScraper.pdb
