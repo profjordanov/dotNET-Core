@@ -1,4 +1,4 @@
-# dotNET-Core
+# Cheat Sheet
 
 _1.Service Configuration
 
