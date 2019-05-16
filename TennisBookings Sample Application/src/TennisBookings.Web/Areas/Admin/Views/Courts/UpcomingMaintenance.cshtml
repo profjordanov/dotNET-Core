@@ -1,0 +1,27 @@
+﻿@using TennisBookings.Web.Core
+@model TennisBookings.Web.Areas.Admin.ViewModels.MaintenanceListerViewModel
+@{
+    ViewData["Title"] = "Upcoming Court Maintenance";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var date in Model.ScheduledMaintenanceWork)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@date.Key.ToString("D")</h2>
+
+            @foreach (var maintenanceWork in date)
+            {
+                <div class="@(maintenanceWork.CourtIsClosed ? "alert alert-warning" : "alert alert-success")">
+                    <p><strong>@(maintenanceWork.CourtIsClosed ? "CLOSED" : "OPEN")</strong></p>
+                    <p>
+                        <strong>@maintenanceWork.CourtName</strong>: @maintenanceWork.StartDateTime.Hour.To12HourClockString() to @maintenanceWork.EndDateTime.Hour.To12HourClockString()<br/>
+                        <em>@maintenanceWork.Title</em>
+                    </p>
+                </div>
+                }
+            </div>
+    </div>
+}
