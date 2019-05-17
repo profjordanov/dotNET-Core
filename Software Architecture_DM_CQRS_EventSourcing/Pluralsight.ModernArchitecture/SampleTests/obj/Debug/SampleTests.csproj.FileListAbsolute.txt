@@ -1,0 +1,7 @@
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\bin\Debug\SampleTests.dll
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\bin\Debug\SampleTests.pdb
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\bin\Debug\Module4.DomainModel.dll
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\bin\Debug\Module4.DomainModel.pdb
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\obj\Debug\SampleTests.csprojResolveAssemblyReference.cache
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\obj\Debug\SampleTests.dll
+E:\My Projects\Pluralsight\CQRS\Impl\Source\Pluralsight.ModernArchitecture\SampleTests\obj\Debug\SampleTests.pdb
