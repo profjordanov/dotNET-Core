@@ -1,0 +1,39 @@
+﻿@page
+@using TennisBookings.Web.Core
+@model BookingsModel
+@{
+    ViewData["Title"] = "Your Bookings";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.BookingSuccess)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-success">
+                <p><strong>You've successfully created a booking!</strong></p>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>@Model.Greeting</h2>
+    </div>
+</div>
+
+@foreach (var date in Model.CourtBookings)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@date.Key.ToString("D")</h2>
+
+            @foreach (var booking in date)
+            {
+                <p><strong>Court @booking.CourtId</strong>: @booking.StartDateTime.Hour.To12HourClockString() to @booking.EndDateTime.Hour.To12HourClockString()</p>
+            }
+        </div>
+    </div>
+}

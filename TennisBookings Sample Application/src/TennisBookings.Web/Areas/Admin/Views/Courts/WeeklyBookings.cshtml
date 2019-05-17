@@ -1,0 +1,48 @@
+﻿@using TennisBookings.Web.Core
+@model TennisBookings.Web.Areas.Admin.ViewModels.BookingListerViewModel
+@{
+    ViewData["Title"] = "Upcoming Court Bookings";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.CancelSuccessful)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-success">
+                <p><strong>You've successfully cancelled a booking.</strong></p>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <p>You are viewing upcoming bookings until @Model.EndOfWeek.ToString("D").</p>
+    </div>
+</div>
+
+@foreach (var date in Model.CourtBookings)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@date.Key.ToString("D")</h2>
+
+            @foreach (var booking in date)
+            {
+                <div class="alert alert-info">
+                    <p>
+                        <strong>@booking.CourtName</strong>: @booking.StartDateTime.Hour.To12HourClockString() to @booking.EndDateTime.Hour.To12HourClockString()<br />
+                        <em>@booking.MemberName</em>
+                    </p>
+                    <p>
+                        <a asp-controller="Courts" asp-action="CancelBookingConfirmation" asp-route-bookingId="@booking.BookingId" class="btn btn-danger" role="button">
+                            Cancel Booking
+                        </a>
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+}
