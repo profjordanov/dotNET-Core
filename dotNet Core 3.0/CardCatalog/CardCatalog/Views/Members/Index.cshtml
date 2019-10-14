@@ -1,0 +1,32 @@
+﻿@model CardCatalog.Models.MemberViewModel[]
+
+@{
+    ViewBag.Title = "Members";
+}
+
+<h2>Members</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Books Checked Out</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            <tr>
+                <td>
+                    @member.Name
+                </td>
+                <td>
+                    @member.Address
+                </td>
+                <td>
+                    @(member.CheckedOutBooks ?? "")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

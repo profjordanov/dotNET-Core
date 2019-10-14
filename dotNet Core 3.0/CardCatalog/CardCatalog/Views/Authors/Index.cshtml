@@ -1,0 +1,32 @@
+﻿@model CardCatalog.Models.AuthorViewModel[]
+
+@{
+    ViewBag.Title = "Authors";
+}
+
+<h2>Authors</h2>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Genre</th>
+        <th>Latest Book</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var author in Model)
+    {
+        <tr>
+            <td>
+                @author.Name
+            </td>
+            <td>
+                @author.Genre
+            </td>
+            <td>
+                @author.LatestBook
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,41 @@
+﻿@model CardCatalog.Models.BookViewModel[]
+
+@{
+    ViewBag.Title = "Books";
+}
+
+<h2>Books</h2>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Author</th>
+        <th>Published</th>
+        <th>Checked Out Until</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>
+                @book.Title
+            </td>
+            <td>
+                @book.Genre
+            </td>
+            <td>
+                @book.AuthorName
+            </td>
+            <td>
+                @book.PublishedAt.ToShortDateString()
+            </td>
+            <td>
+                @(book.CheckedOutUntil?.ToShortDateString() ?? "--")
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
