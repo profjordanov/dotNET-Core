@@ -4,7 +4,7 @@ using System.Threading;
 using Microsoft.AspNetCore.Http;
 using Moq;
 
-namespace HeidelbergCement.Platform.Downloads.Api.Test.Helpers
+namespace 
 {
     public static class FormFileFixture
     {
