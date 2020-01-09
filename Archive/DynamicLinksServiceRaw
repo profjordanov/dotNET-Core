@@ -12,7 +12,7 @@ using HeidelbergCement.Platform.Permissions.Api.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace HeidelbergCement.Platform.Permissions.Api.Services
+namespace 
 {
     public class DynamicLinksService
     {
